@@ -24,7 +24,7 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-@import "lists";
+
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
@@ -34,5 +34,3 @@ img {
 figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
 }
-
-@import "tables";

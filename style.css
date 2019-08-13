@@ -522,6 +522,26 @@ hr {
   margin-bottom: 1.5em;
 }
 
+/* line 29, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_elements.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* line 34, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_elements.scss */
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_tables.scss */
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
@@ -552,26 +572,6 @@ dt {
 /* line 23, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
-}
-
-/* line 29, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_elements.scss */
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */
-}
-
-/* line 34, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_elements.scss */
-figure {
-  margin: 1em 0;
-  /* Extra wide images within figure tags don't overflow the content area. */
-}
-
-/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_tables.scss */
-table {
-  margin: 0 0 1.5em;
-  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -671,6 +671,9 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_links.scss */
 a {
   color: royalblue;
@@ -696,9 +699,6 @@ a:hover, a:active {
   outline: 0;
 }
 
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation {
   clear: both;
@@ -956,9 +956,6 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
@@ -1039,9 +1036,6 @@ object {
   text-align: center;
 }
 
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
@@ -1098,6 +1092,71 @@ object {
 /* line 19, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_content-sidebar.scss */
+.content-area {
+  float: left;
+  margin: 0 -25% 0 0;
+  width: 100%;
+}
+
+/* line 7, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_content-sidebar.scss */
+.site-main {
+  margin: 0 25% 0 0;
+}
+
+/* line 11, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_content-sidebar.scss */
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+}
+
+/* line 17, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_content-sidebar.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+/* line 2, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_no-sidebar.scss */
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 8, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_no-sidebar.scss */
+.no-sidebar .site-main {
+  margin-right: 0;
+}
+
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
+.content-area {
+  float: right;
+  margin: 0 0 0 -25%;
+  width: 100%;
+}
+
+/* line 7, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
+.site-main {
+  margin: 0 0 0 25%;
+}
+
+/* line 11, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
+.site-content .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 25%;
+}
+
+/* line 17, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
+.site-footer {
+  clear: both;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

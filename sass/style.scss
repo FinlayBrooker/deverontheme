@@ -43,6 +43,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
+@import "variables-site/colors";
+@import "variables-site/typography";
+@import "variables-site/structure";
+@import "variables-site/columns";
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
@@ -54,21 +58,31 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Typography
 --------------------------------------------------------------*/
 @import "typography/typography";
+@import "typography/headings";
+@import "typography/copy";
+
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 @import "elements/elements";
+@import "elements/tables";
+@import "elements/lists";
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
 @import "forms/forms";
+@import "forms/buttons";
+@import "forms/fields";
+
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 @import "navigation/navigation";
+@import "navigation/links";
+@import "navigation/menus";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -94,7 +108,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Content
 --------------------------------------------------------------*/
 @import "site/site";
-
+@import "site/primary/posts-and-pages";
+@import "site/primary/comments";
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -104,3 +119,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+@import "media/captions";
+@import "media/galleries";
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+@import "layout/content-sidebar";
+@import "layout/no-sidebar";
+@import "layout/sidebar-content";
