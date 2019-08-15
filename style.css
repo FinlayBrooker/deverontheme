@@ -508,7 +508,6 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  background: radial-gradient(circle farthest-corner at center, blue 50%, aqua 60%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
