@@ -419,7 +419,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: #003C55;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -506,7 +506,7 @@ html {
 
 /* line 11, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/elements/_elements.scss */
 body {
-  background: #fff;
+  background: #d4e5e8;
   /* Fallback for when there is no custom background color defined. */
   background-repeat: no-repeat;
   background-size: cover;
@@ -702,19 +702,24 @@ a:hover, a:active {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%;
+  float: right;
+  width: calc(100% - 200px);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
 }
 
-/* line 7, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 11, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
+  float: right;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-/* line 13, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 19, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -724,60 +729,61 @@ a:hover, a:active {
   z-index: 99999;
 }
 
-/* line 21, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 27, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
 
-/* line 27, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 33, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
-/* line 33, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 39, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
 
-/* line 46, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 52, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 52, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 58, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   position: relative;
+  margin-right: 20px;
 }
 
-/* line 61, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 68, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 74, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 81, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 80, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+  /* line 87, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
-  /* line 83, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+  /* line 90, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
 
-/* line 92, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 99, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -785,7 +791,7 @@ a:hover, a:active {
   overflow: hidden;
 }
 
-/* line 97, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 104, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -793,7 +799,7 @@ a:hover, a:active {
   width: 50%;
 }
 
-/* line 102, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 109, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -955,6 +961,25 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
+/* line 25, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
+.entry-content {
+  padding: 0 100px;
+}
+
+/* line 30, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
+.announcement-section {
+  background-color: #ccc;
+  margin: 100px 0px;
+  padding: 50px 25px;
+  list-style: none;
+}
+
+/* line 38, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
+.image-wrap {
+  padding: 15px;
+  background-color: #ccc;
+}
+
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
@@ -963,6 +988,54 @@ a:hover, a:active {
 /* line 4, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
+}
+
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_header.scss */
+.site-branding {
+  width: 200px;
+  display: inline-block;
+}
+
+/* line 7, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_header.scss */
+.menu-bar {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.4) 90%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* line 13, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_header.scss */
+.n2-section-smartslider {
+  z-index: -1;
+}
+
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_footer.scss */
+.site-footer {
+  background-color: #00587A;
+}
+
+/* line 6, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_footer.scss */
+.site-info {
+  background-color: #003C55;
+  color: #ffffff;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/* line 13, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_footer.scss */
+.footer-text {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* line 18, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_footer.scss */
+.footer-logo {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 23, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_footer.scss */
+.footer-grid {
+  height: 200px;
 }
 
 /*--------------------------------------------------------------
@@ -1130,7 +1203,7 @@ object {
 
 /* line 8, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_no-sidebar.scss */
 .no-sidebar .site-main {
-  margin-right: 0;
+  margin: 0;
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
@@ -1156,6 +1229,196 @@ object {
 .site-footer {
   clear: both;
   width: 100%;
+}
+
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* line 9, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .grid-item-align {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+/* line 15, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .grid-item-justify {
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+/* line 20, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 24, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area div:first-child {
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+/* line 28, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area div:last-child {
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+@supports (grid-gap: 10px) {
+  /* line 33, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+  .grid-12-area div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* line 37, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+  .grid-12-area div:first-child {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* line 41, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+  .grid-12-area div:last-child {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* line 47, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-1-of-12 {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+}
+
+/* line 51, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-2-of-12 {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+/* line 55, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-3-of-12 {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+}
+
+/* line 59, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-4-of-12 {
+  -ms-grid-column-span: 4;
+  grid-column: span 4;
+}
+
+/* line 63, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-5-of-12 {
+  -ms-grid-column-span: 5;
+  grid-column: span 5;
+}
+
+/* line 67, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-6-of-12 {
+  -ms-grid-column-span: 6;
+  grid-column: span 6;
+}
+
+/* line 71, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-7-of-12 {
+  -ms-grid-column-span: 7;
+  grid-column: span 7;
+}
+
+/* line 75, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-8-of-12 {
+  -ms-grid-column-span: 8;
+  grid-column: span 8;
+}
+
+/* line 79, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-9-of-12 {
+  -ms-grid-column-span: 9;
+  grid-column: span 9;
+}
+
+/* line 83, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-10-of-12 {
+  -ms-grid-column-span: 10;
+  grid-column: span 10;
+}
+
+/* line 87, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-11-of-12 {
+  -ms-grid-column-span: 11;
+  grid-column: span 11;
+}
+
+/* line 91, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .col-12-of-12 {
+  -ms-grid-column-span: 12;
+  grid-column: span 12;
+}
+
+/* line 97, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-1 {
+  -ms-grid-column: 1;
+}
+
+/* line 101, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-2 {
+  -ms-grid-column: 2;
+}
+
+/* line 105, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-3 {
+  -ms-grid-column: 3;
+}
+
+/* line 109, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-4 {
+  -ms-grid-column: 4;
+}
+
+/* line 113, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-5 {
+  -ms-grid-column: 5;
+}
+
+/* line 117, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-6 {
+  -ms-grid-column: 6;
+}
+
+/* line 121, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-7 {
+  -ms-grid-column: 7;
+}
+
+/* line 125, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-8 {
+  -ms-grid-column: 8;
+}
+
+/* line 129, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-9 {
+  -ms-grid-column: 9;
+}
+
+/* line 133, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-10 {
+  -ms-grid-column: 10;
+}
+
+/* line 137, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-11 {
+  -ms-grid-column: 11;
+}
+
+/* line 141, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */
+.grid-12-area .start-col-12 {
+  -ms-grid-column: 12;
 }
 
 /*# sourceMappingURL=style.css.map */

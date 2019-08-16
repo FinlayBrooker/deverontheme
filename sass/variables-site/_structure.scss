@@ -1,2 +1,10 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
+
+// header widths
+$size__site-branding: 200px;
+$size__main-nav: calc(100% - #{$size__site-branding});
+$size__header-height: 74px;
+
+// grid-12 vars
+$size__grid-gap: 10px;

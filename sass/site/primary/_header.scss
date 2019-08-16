@@ -1,0 +1,15 @@
+.site-branding{
+	width: $size__site-branding;
+
+	display: inline-block;
+}
+
+.menu-bar{
+	width: 100%;
+	position: absolute;
+	background: linear-gradient($color__background-header-1 50%, $color__background-header-2 90%, $color__background-header-3 100%);
+}
+
+.n2-section-smartslider{
+	z-index: -1;
+}

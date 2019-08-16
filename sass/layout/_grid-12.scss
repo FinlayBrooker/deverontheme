@@ -1,0 +1,145 @@
+.grid-12-area{
+	display: -ms-grid;
+	display: grid;
+	grid-gap: $size__grid-gap;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+//horizontal align
+	.grid-item-align{
+		-ms-flex-item-align: center;
+		    -ms-grid-row-align: center;
+		    align-self: center;
+	}
+	//vertical align
+	.grid-item-justify{
+		-ms-grid-column-align: center;
+		    justify-self: center;
+	}
+	// grid gap hack for IE
+	div{
+		margin-left: $size__grid-gap/2;
+		margin-right: $size__grid-gap/2;
+	}
+	div:first-child{
+		margin-left: 0px;
+		margin-right: $size__grid-gap/2;
+	}
+	div:last-child{
+		margin-left: $size__grid-gap/2;
+		margin-right: 0px;
+	}
+	@supports(grid-gap:10px){
+		div{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		div:first-child{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		div:last-child{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+
+	.col-1-of-12{
+		-ms-grid-column-span: 1;
+		grid-column: span 1;
+	}
+	.col-2-of-12{
+		-ms-grid-column-span: 2;
+		grid-column: span 2;
+	}
+	.col-3-of-12{
+		-ms-grid-column-span: 3;
+		grid-column: span 3;
+	}
+	.col-4-of-12{
+		-ms-grid-column-span: 4;
+		grid-column: span 4;
+	}
+	.col-5-of-12{
+		-ms-grid-column-span: 5;
+		grid-column: span 5;
+	}
+	.col-6-of-12{
+		-ms-grid-column-span: 6;
+		grid-column: span 6;
+	}
+	.col-7-of-12{
+		-ms-grid-column-span: 7;
+		grid-column: span 7;
+	}
+	.col-8-of-12{
+		-ms-grid-column-span: 8;
+		grid-column: span 8;
+	}
+	.col-9-of-12{
+		-ms-grid-column-span: 9;
+		grid-column: span 9;
+	}
+	.col-10-of-12{
+		-ms-grid-column-span: 10;
+		grid-column: span 10;
+	}
+	.col-11-of-12{
+		-ms-grid-column-span: 11;
+		grid-column: span 11;
+	}
+	.col-12-of-12{
+		-ms-grid-column-span: 12;
+		grid-column: span 12;
+	}
+
+	// placement classes for IE
+	.start-col-1{
+		-ms-grid-column:1;
+
+	}
+	.start-col-2{
+		-ms-grid-column:2;
+
+	}
+	.start-col-3{
+		-ms-grid-column:3;
+
+	}
+	.start-col-4{
+		-ms-grid-column:4;
+
+	}
+	.start-col-5{
+		-ms-grid-column:5;
+
+	}
+	.start-col-6{
+		-ms-grid-column:6;
+
+	}
+	.start-col-7{
+		-ms-grid-column:7;
+
+	}
+	.start-col-8{
+		-ms-grid-column:8;
+
+	}
+	.start-col-9{
+		-ms-grid-column:9;
+
+	}
+	.start-col-10{
+		-ms-grid-column:10;
+
+	}
+	.start-col-11{
+		-ms-grid-column:11;
+
+	}
+	.start-col-12{
+		-ms-grid-column:12;
+
+	}
+}

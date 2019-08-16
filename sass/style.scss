@@ -110,6 +110,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "site/site";
 @import "site/primary/posts-and-pages";
 @import "site/primary/comments";
+@import "site/primary/header";
+@import "site/primary/footer";
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -130,3 +132,4 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "layout/content-sidebar";
 @import "layout/no-sidebar";
 @import "layout/sidebar-content";
+@import "layout/grid-12";
