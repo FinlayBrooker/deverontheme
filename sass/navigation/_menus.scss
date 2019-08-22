@@ -81,6 +81,8 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	float: right;
+	margin-right: 20px;
 }
 
 @media screen and (min-width: 37.5em) {

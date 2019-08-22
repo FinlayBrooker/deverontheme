@@ -6,13 +6,15 @@ input[type="submit"] {
 	border-color: $color__border-button;
 	border-radius: 3px;
 	background: $color__background-button;
-	color: rgba(0, 0, 0, .8);
-	@include font-size(0.75);
+	color: $color__text-main;
+	//@include font-size(0.75);
+	font-size: 1.2em;
 	line-height: 1;
 	padding: .6em 1em .4em;
 
 	&:hover {
 		border-color: $color__border-button-hover;
+		background: $color__background-button-hover;
 	}
 
 	&:active,

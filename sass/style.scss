@@ -83,6 +83,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "navigation/navigation";
 @import "navigation/links";
 @import "navigation/menus";
+@import "navigation/widget-menus";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -131,5 +132,5 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "layout/content-sidebar";
 @import "layout/no-sidebar";
-@import "layout/sidebar-content";
+//@import "layout/sidebar-content";
 @import "layout/grid-12";

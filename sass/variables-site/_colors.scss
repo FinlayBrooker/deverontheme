@@ -3,11 +3,14 @@ $color__accent: #00A1E0;
 $color__accent-2: #0073A1;
 $color__dark: #003C55;
 $color__dark-2:#00587A;
+$color__light-blue: #036b95;
+$color__lightish-blue: #08a8aa;
 
 $color__background-body: #d4e5e8;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
+$color__background-button: $color__accent;
+$color__background-button-hover: darken($color__accent,5%);
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
@@ -19,8 +22,8 @@ $color__link-visited: purple;
 $color__link-hover: midnightblue;
 $color__text-main: $color__dark;
 
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button: $color__lightish-blue;
+$color__border-button-hover: $color__accent;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;

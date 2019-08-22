@@ -582,25 +582,25 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #08a8aa;
   border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  background: #00A1E0;
+  color: #003C55;
+  font-size: 1.2em;
   line-height: 1;
   padding: .6em 1em .4em;
 }
 
-/* line 14, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/forms/_buttons.scss */
+/* line 15, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/forms/_buttons.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: #00A1E0;
+  background: #008fc7;
 }
 
-/* line 18, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/forms/_buttons.scss */
+/* line 20, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/forms/_buttons.scss */
 button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
@@ -770,20 +770,22 @@ a:hover, a:active {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
+  float: right;
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 87, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+  /* line 89, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
-  /* line 90, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+  /* line 92, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
 
-/* line 99, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 101, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -791,7 +793,7 @@ a:hover, a:active {
   overflow: hidden;
 }
 
-/* line 104, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 106, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -799,13 +801,32 @@ a:hover, a:active {
   width: 50%;
 }
 
-/* line 109, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
+/* line 111, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
+}
+
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_widget-menus.scss */
+.widget_nav_menu {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* line 5, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_widget-menus.scss */
+.widget_nav_menu ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 9, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_widget-menus.scss */
+.widget_nav_menu ul li {
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -966,7 +987,12 @@ a:hover, a:active {
   padding: 0 100px;
 }
 
-/* line 30, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
+/* line 29, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
+.not-home {
+  margin-top: 300px;
+}
+
+/* line 33, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
 .announcement-section {
   background-color: #ccc;
   margin: 100px 0px;
@@ -974,10 +1000,23 @@ a:hover, a:active {
   list-style: none;
 }
 
-/* line 38, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
+/* line 41, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
 .image-wrap {
   padding: 15px;
   background-color: #ccc;
+}
+
+/* line 46, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_posts-and-pages.scss */
+.entry-header {
+  color: white;
+  background-color: #00587A;
+  text-align: center;
+  height: 300px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  line-height: 300px;
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_comments.scss */
@@ -1183,12 +1222,13 @@ object {
 
 /* line 11, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_content-sidebar.scss */
 .site-content .widget-area {
+  margin-top: 300px;
   float: right;
   overflow: hidden;
   width: 25%;
 }
 
-/* line 17, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_content-sidebar.scss */
+/* line 18, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_content-sidebar.scss */
 .site-footer {
   clear: both;
   width: 100%;
@@ -1204,31 +1244,6 @@ object {
 /* line 8, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_no-sidebar.scss */
 .no-sidebar .site-main {
   margin: 0;
-}
-
-/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
-.content-area {
-  float: right;
-  margin: 0 0 0 -25%;
-  width: 100%;
-}
-
-/* line 7, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
-.site-main {
-  margin: 0 0 0 25%;
-}
-
-/* line 11, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
-.site-content .widget-area {
-  float: left;
-  overflow: hidden;
-  width: 25%;
-}
-
-/* line 17, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_sidebar-content.scss */
-.site-footer {
-  clear: both;
-  width: 100%;
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */

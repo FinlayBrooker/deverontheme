@@ -26,6 +26,9 @@
 	padding: 0 100px;
 }
 
+.not-home{
+	margin-top: $size__entry-header-height;
+}
 
 .announcement-section{
 	background-color: $color__background-hr;
@@ -38,4 +41,17 @@
 .image-wrap{
 	padding: 15px;
 	background-color: $color__background-hr;
+}
+
+.entry-header{
+	color: white;
+	background-color: $color__dark-2;
+	text-align: center;
+	height: $size__entry-header-height;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	top:0;
+	line-height: $size__entry-header-height;
+
 }

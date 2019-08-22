@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Home
+ * Template name: Page with sidebar
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -13,17 +13,17 @@
  * @package blank_theme
  */
 
-get_header('home');
+get_header();
 ?>
 
-	<div id="primary" class="no-sidebar content-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'home' );
+			get_template_part( 'template-parts/content', 'sidebar' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
@@ -37,5 +37,5 @@ get_header('home');
 	</div><!-- #primary -->
 
 <?php
-//get_sidebar();
-get_footer('home');
+get_sidebar();
+get_footer();
