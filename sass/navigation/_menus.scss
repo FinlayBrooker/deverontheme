@@ -68,12 +68,18 @@
 	a {
 		display: block;
 		text-decoration: none;
+
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		color: $color__link-hover;
+		text-decoration: underline;
 	}
 }
 

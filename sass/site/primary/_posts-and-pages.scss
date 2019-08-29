@@ -35,7 +35,9 @@
 	margin:100px 0px;
 	padding: 50px 25px;
 	list-style: none;
-
+	&:empty{
+		display: none;
+	}
 }
 
 .image-wrap{

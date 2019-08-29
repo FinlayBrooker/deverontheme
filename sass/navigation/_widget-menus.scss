@@ -1,7 +1,7 @@
 .widget_nav_menu{
 	background-color: white;
 	padding: 15px;
-	border-radius: 5px 0px 0px 5px;
+	border-radius: 0px 0px 0px 5px;
 	ul{
 		list-style: none;
 		margin-left: 0;
@@ -9,5 +9,22 @@
 		li{
 				margin-bottom: 10px;
 		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+		color: $color__link-hover;
+		text-decoration: underline;
 	}
 }
