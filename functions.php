@@ -133,6 +133,22 @@ function blanktheme_scripts() {
 add_action( 'wp_enqueue_scripts', 'blanktheme_scripts' );
 
 /**
+* activate font awesome
+*/
+//function enqueue_icon_stylesheet() {
+//	wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+//	wp_enqueue_style( 'fontawesome');
+//}
+//add_action( 'wp_enqueue_scripts', 'enqueue_icon_stylesheet' );
+
+/** Enqueue Font Awesome.
+*add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
+*function custom_load_font_awesome() {
+*		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/js/all.js', array(), null );
+*}
+*/
+//add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -158,4 +174,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

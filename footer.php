@@ -14,16 +14,16 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="grid-12-area footer-grid">
-			<div class="col-4-of-12 start-col-1 grid-item-align grid-item-justify">
-				<button>Get in Touch</button>
+		<div class="footer-3-grid footer-grid">
+			<div class="first-item grid-item-align grid-item-justify">
+				<a href="https://www.facebook.com/deveronpaddlers/"><button>Get in Touch</button></a>
 			</div>
-			<div class="col-4-of-12 start-col-5 grid-item-align grid-item-justify">
+			<div class="second-item grid-item-align grid-item-justify">
 				<p class="footer-text">British Canoeing Quality Mark Provider</p>
 				<a href="/"><img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/scottish-canoe-association-logo.png"></a>
 			</div>
-			<div class="col-4-of-12 start-col-9 grid-item-align grid-item-justify">
-				<button>Find us on Facebook</button>
+			<div class="third-item grid-item-align grid-item-justify">
+				<a href="https://www.facebook.com/deveronpaddlers/"><button>Find us on Facebook</button></a>
 			</div>
 		</div>
 		<div class="site-info">

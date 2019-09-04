@@ -8,6 +8,11 @@
   right: 0;
   transform: translate(0, -50%);
 
+	i{
+		font-style: normal;
+		font-size: 1.3em;
+	}
+
 	ul {
 		display: none;
 		float: right;
@@ -72,6 +77,7 @@
 		&:hover{
 			text-decoration: underline;
 		}
+
 	}
 
 	.current_page_item > a,

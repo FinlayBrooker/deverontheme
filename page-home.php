@@ -38,4 +38,4 @@ get_header('home');
 
 <?php
 //get_sidebar();
-get_footer('home');
+get_footer();
