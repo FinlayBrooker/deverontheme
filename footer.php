@@ -16,11 +16,11 @@
 	<footer id="colophon" class="site-footer">
 		<div class="footer-3-grid footer-grid">
 			<div class="first-item grid-item-align grid-item-justify">
-				<a href="https://www.facebook.com/deveronpaddlers/"><button>Get in Touch</button></a>
+				<a href="/contact"><button>Get in Touch</button></a>
 			</div>
 			<div class="second-item grid-item-align grid-item-justify">
 				<p class="footer-text">British Canoeing Quality Mark Provider</p>
-				<a href="/"><img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/scottish-canoe-association-logo.png"></a>
+				<a href="https://www.canoescotland.org/"><img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/scottish-canoe-association-logo.png"></a>
 			</div>
 			<div class="third-item grid-item-align grid-item-justify">
 				<a href="https://www.facebook.com/deveronpaddlers/"><button>Find us on Facebook</button></a>

@@ -862,7 +862,7 @@ a:hover, a:active {
 .widget_nav_menu {
   background-color: white;
   padding: 15px;
-  border-radius: 0px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
 }
 
 /* line 5, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/navigation/_widget-menus.scss */
@@ -1013,6 +1013,13 @@ a:hover, a:active {
 /* line 5, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
+}
+
+/* line 10, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/secondary/_widgets.scss */
+#nav_menu-3 {
+  width: 100%;
+  box-shadow: 5px 10px 8px #888888;
+  z-index: -1;
 }
 
 /*--------------------------------------------------------------
@@ -1279,6 +1286,11 @@ object {
 /* line 19, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
+}
+
+/* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_slider.scss */
+.n2-ss-slider-2 {
+  background-color: #00587A;
 }
 
 /*--------------------------------------------------------------
