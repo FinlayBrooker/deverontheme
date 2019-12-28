@@ -3,10 +3,10 @@
 	display: block;
 	float: right;
 	width: $size__main-nav;
-	position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
+	//position: absolute;
+  //top: 50%;
+  //right: 0;
+  transform: translate(0, 100%);
 
 	i{
 		font-style: normal;
@@ -95,6 +95,8 @@
 	display: block;
 	float: right;
 	margin-right: 20px;
+	position: absolute;
+	top: 5px;
 }
 
 @media screen and (min-width: 37.5em) {

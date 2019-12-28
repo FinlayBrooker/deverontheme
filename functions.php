@@ -156,7 +156,7 @@ function custom_load_font_awesome() {
 		wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/js/all.js', array(), null );
 }
 
-add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
+//add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
 /**
  * Implement the Custom Header feature.
  */

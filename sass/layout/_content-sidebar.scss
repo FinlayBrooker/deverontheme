@@ -9,7 +9,7 @@
 }
 
 .site-content .widget-area {
-	margin-top: $size__entry-header-height;
+	margin-top: $size__entry-header-height - 80px;
 	float: right;
 	overflow: hidden;
 	width: $size__site-sidebar;
