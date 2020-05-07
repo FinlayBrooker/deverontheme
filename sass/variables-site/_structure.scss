@@ -4,10 +4,13 @@ $size__site-sidebar: 25%;
 // header widths
 $size__site-branding: 200px;
 $size__main-nav: calc(100% - #{$size__site-branding});
-$size__header-height: 74px;
+$size__header-height: 82px;
 
 // grid-12 vars
 $size__grid-gap: 10px;
 
 // non home entry header height
 $size__entry-header-height: 300px;
+
+//mini menu height
+$size__mini-menu-height: calc(100vh - 82px);
