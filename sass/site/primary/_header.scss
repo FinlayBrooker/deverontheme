@@ -7,11 +7,27 @@
 
 .menu-bar{
 	width: 100%;
-	
+
 	background: linear-gradient($color__background-header-1 50%, $color__background-header-2 90%, $color__background-header-3 100%);
 	z-index: 2;
 }
 
 .n2-section-smartslider{
 	z-index: 1;
+	max-width: $size__max-width;
+	clear: both;
+	@include center-block;
+}
+
+.filler{
+	height: 1000000px;
+	top: 0px;
+	max-height: calc(#{$size__max-slider-height} + #{$size__header-height});
+	width: 100%;
+	position: absolute;
+	background-color: $color__dark-2;
+	z-index: -2;
+	@media(max-width: 1200px){
+		max-height: 100px;
+	}
 }

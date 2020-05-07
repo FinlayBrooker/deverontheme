@@ -1,4 +1,21 @@
-.n2-ss-slider-2{
+.n2-ss-slider-1{
   background-color: $color__dark-2;
-  //max-height: calc(100vh - #{$size__header-height});
+  max-height: $size__max-slider-height;
+  display: flex;
+}
+
+#n2-ss-2-arrow-previous,#n2-ss-2-arrow-next{
+  //determine if hight is at max or not using width and aspect ratio of 2
+
+  //top: calc((#{$size__max-slider-height}/2) - 16px) !important;
+  //position: ab !important;
+  top: auto !important;
+  align-self: center;
+}
+
+#n2-ss-2-arrow-previous{
+  order: -1;
+}
+#n2-ss-2-arrow-next{
+  order:2;
 }

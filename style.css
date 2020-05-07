@@ -1240,6 +1240,29 @@ a:hover, a:active {
 /* line 15, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_header.scss */
 .n2-section-smartslider {
   z-index: 1;
+  max-width: 1200px;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 22, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_header.scss */
+.filler {
+  height: 1000000px;
+  top: 0px;
+  max-height: calc(calc(100vh - 82px) + 82px);
+  width: 100%;
+  position: absolute;
+  background-color: #00587A;
+  z-index: -2;
+}
+
+@media (max-width: 1200px) {
+  /* line 22, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_header.scss */
+  .filler {
+    max-height: 100px;
+  }
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/primary/_footer.scss */
@@ -1402,8 +1425,26 @@ object {
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_slider.scss */
-.n2-ss-slider-2 {
+.n2-ss-slider-1 {
   background-color: #00587A;
+  max-height: calc(100vh - 82px);
+  display: flex;
+}
+
+/* line 7, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_slider.scss */
+#n2-ss-2-arrow-previous, #n2-ss-2-arrow-next {
+  top: auto !important;
+  align-self: center;
+}
+
+/* line 16, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_slider.scss */
+#n2-ss-2-arrow-previous {
+  order: -1;
+}
+
+/* line 19, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_slider.scss */
+#n2-ss-2-arrow-next {
+  order: 2;
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_map.scss */
@@ -1470,6 +1511,15 @@ object {
 /* line 8, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_no-sidebar.scss */
 .no-sidebar .site-main {
   margin: 0;
+}
+
+/* line 12, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_no-sidebar.scss */
+#content {
+  max-width: 1200px;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_grid-12.scss */

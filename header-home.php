@@ -43,6 +43,7 @@
 			?>
 		</nav><!-- #site-navigation -->
 </div>
+<div class="filler"></div>
 		<?php
 			echo do_shortcode('[smartslider3 slider=2]');
 		?>

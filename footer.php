@@ -33,7 +33,7 @@
 				//printf( esc_html__( 'Proudly powered by %s', 'blanktheme' ), 'WordPress' );
 				?>
 			</a>
-			<span class="sep"> contact us    |    we use cookies     |     gdpr Copyright  ©  Deveron Paddlers 2019  </span>
+			<span class="sep"> <a href="/contact">Contact Us</a>    |    We Use Cookies     |     gdpr Copyright  ©  Deveron Paddlers 2019  </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
 				//printf( esc_html__( 'Theme: %1$s by %2$s.', 'blanktheme' ), 'blanktheme', '<a href="http://underscores.me/">Finlay Brooker</a>' );

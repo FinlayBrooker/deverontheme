@@ -14,3 +14,8 @@ $size__entry-header-height: 300px;
 
 //mini menu height
 $size__mini-menu-height: calc(100vh - 82px);
+
+$size__max-width: 1200px;
+
+//slider
+$size__max-slider-height: calc(100vh - #{$size__header-height});

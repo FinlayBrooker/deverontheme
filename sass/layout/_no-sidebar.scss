@@ -9,3 +9,8 @@
 		margin: 0;
 	}
 }
+#content{
+	max-width: $size__max-width;
+	clear: both;
+	@include center-block;
+}
