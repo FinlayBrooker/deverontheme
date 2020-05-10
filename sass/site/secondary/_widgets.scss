@@ -1,6 +1,7 @@
 .widget {
 	margin: 0 0 1.5em;
 
+
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
@@ -12,9 +13,18 @@
 }
 
 #nav_menu-3{
-	width: 100%;
+	width: $size__site-sidebar;
 
 	z-index: -1;
+}
+
+#nav_menu-3.element-is-sticky{
+	right:0;
+	left: auto !important;
+}
+
+.widget-area{
+	//min-height: 550px;
 }
 
 .cff-wrapper{

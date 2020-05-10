@@ -34,6 +34,19 @@
 	.site-main {
 		margin: 0;
 	}
+	.widget_nav_menu{
+		position: static;
+		width: 100%;
+	}
+	#nav_menu-3{
+		width: 100%;
+		//position: static !important;
+		z-index: -1;
+	}
+	.invisi_div{
+		display: none;
+	}
+
 }
 
 //@import "no-sidebar";

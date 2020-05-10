@@ -1,6 +1,16 @@
+.invisi_div .widget_nav_menu{
+	position: relative;
+	left: 100px;
+	z-index: -3;
+	width: 100%;
+}
 .widget_nav_menu{
+	position: absolute;
+	right: 0;
+	width: $size__site-sidebar;
 	background-color: white;
 	padding: 15px;
+	//border: 1px black solid;
 	border-radius: 5px 0px 0px 5px;
 	ul{
 		list-style: none;
