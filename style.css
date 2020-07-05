@@ -1098,7 +1098,6 @@ a:hover, a:active {
 /* line 15, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/secondary/_widgets.scss */
 #nav_menu-3 {
   width: 25%;
-  z-index: -1;
 }
 
 /* line 21, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/site/secondary/_widgets.scss */
@@ -1747,82 +1746,83 @@ object {
 .footer-3-grid {
   display: -ms-grid;
   display: grid;
+  justify-content: space-around;
   grid-gap: 10px;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* line 9, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 11, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid .grid-item-align {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
 
-/* line 15, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 17, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid .grid-item-justify {
   -ms-grid-column-align: center;
   justify-self: center;
 }
 
-/* line 20, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 22, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid div {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 24, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 26, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid div:first-child {
   margin-left: 0px;
   margin-right: 5px;
 }
 
-/* line 28, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 30, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid div:last-child {
   margin-left: 5px;
   margin-right: 0px;
 }
 
 @supports (grid-gap: 10px) {
-  /* line 33, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 35, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid div {
     margin-left: 0px;
     margin-right: 0px;
   }
-  /* line 37, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 39, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid div:first-child {
     margin-left: 0px;
     margin-right: 0px;
   }
-  /* line 41, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 43, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid div:last-child {
     margin-left: 0px;
     margin-right: 0px;
   }
 }
 
-/* line 47, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 49, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid .first-item {
   -ms-grid-column-span: 1;
   -ms-grid-column: 1;
   grid-column: span 1;
 }
 
-/* line 53, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 56, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid .second-item {
   -ms-grid-column-span: 1;
   -ms-grid-column: 2;
   grid-column: span 1;
 }
 
-/* line 59, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 62, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .footer-3-grid .third-item {
   -ms-grid-column-span: 1;
   -ms-grid-column: 3;
   grid-column: span 1;
 }
 
-/* line 66, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 69, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid {
   display: -ms-grid;
   display: grid;
@@ -1831,63 +1831,63 @@ object {
   grid-template-columns: 1fr 1fr;
 }
 
-/* line 74, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 79, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid .grid-item-align {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
 
-/* line 80, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 85, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid .grid-item-justify {
   -ms-grid-column-align: center;
   justify-self: center;
 }
 
-/* line 85, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 90, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid div {
   margin-left: 5px;
   margin-right: 5px;
 }
 
-/* line 89, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 94, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid div:first-child {
   margin-left: 0px;
   margin-right: 5px;
 }
 
-/* line 93, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 98, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid div:last-child {
   margin-left: 5px;
   margin-right: 0px;
 }
 
 @supports (grid-gap: 10px) {
-  /* line 98, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 103, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .home-2-grid div {
     margin-left: 0px;
     margin-right: 0px;
   }
-  /* line 102, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 107, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .home-2-grid div:first-child {
     margin-left: 0px;
     margin-right: 0px;
   }
-  /* line 106, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 111, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .home-2-grid div:last-child {
     margin-left: 0px;
     margin-right: 0px;
   }
 }
 
-/* line 112, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 117, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid .first-item {
   -ms-grid-column-span: 1;
   -ms-grid-column: 1;
   grid-column: span 1;
 }
 
-/* line 117, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+/* line 122, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
 .home-2-grid .second-item {
   -ms-grid-column-span: 1;
   -ms-grid-column: 2;
@@ -1895,49 +1895,50 @@ object {
 }
 
 @media (max-width: 500px) {
-  /* line 126, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 131, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid {
     -ms-grid-columns: 1fr;
     -ms-grid-rows: auto auto auto;
     grid-template-columns: 1fr;
+    flex-direction: column;
   }
-  /* line 131, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 137, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid div {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  /* line 135, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 141, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid .first-item {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  /* line 140, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 146, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid .second-item {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
-  /* line 145, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 151, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .footer-3-grid .third-item {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
-  /* line 150, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 156, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .home-2-grid {
     -ms-grid-columns: 1fr;
     -ms-grid-rows: auto auto;
     grid-template-columns: 1fr;
   }
-  /* line 154, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 161, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .home-2-grid div {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  /* line 158, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 165, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .home-2-grid .first-item {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  /* line 163, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
+  /* line 170, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/layout/_custom-grids.scss */
   .home-2-grid .second-item {
     -ms-grid-row: 2;
     -ms-grid-column: 1;

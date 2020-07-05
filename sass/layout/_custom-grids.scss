@@ -1,6 +1,8 @@
 .footer-3-grid{
 	display: -ms-grid;
 	display: grid;
+	//display: flex;
+	justify-content: space-around;
 	grid-gap: $size__grid-gap;
 	-ms-grid-columns: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -45,6 +47,7 @@
 		}
 
 		.first-item{
+
 			-ms-grid-column-span: 1;
 			-ms-grid-column:1;
 			grid-column: span 1;
@@ -66,6 +69,8 @@
 .home-2-grid{
 	display: -ms-grid;
 	display: grid;
+	//display: flex;
+	//justify-content: space-between;
 	grid-gap: $size__grid-gap;
 	-ms-grid-columns: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
@@ -127,6 +132,7 @@
 		-ms-grid-columns: 1fr;
 		-ms-grid-rows: auto auto auto;
 		grid-template-columns: 1fr;
+		flex-direction: column;
 		//background-color: green;
 		div{
 			margin-top: $size__grid-gap/2;
@@ -148,6 +154,7 @@
 		}
 	}
 	.home-2-grid{
+		//flex-direction: column;
 		-ms-grid-columns: 1fr;
 		-ms-grid-rows: auto auto;
 		grid-template-columns: 1fr;
