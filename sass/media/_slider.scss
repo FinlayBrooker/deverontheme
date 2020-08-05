@@ -19,3 +19,9 @@
 #n2-ss-2-arrow-next{
   order:2;
 }
+.n2-ss-slider-2{
+  //this is a fix for the new updated vesrsion of the plugin which is currently broken and not saving any changes to the settings
+  width: 100%;
+  
+  max-height: $size__max-slider-height !important;
+}

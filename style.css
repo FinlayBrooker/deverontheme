@@ -1267,11 +1267,11 @@ a:hover, a:active {
 .filler {
   height: 1000000px;
   top: 0px;
-  max-height: calc(calc(100vh - 82px) + 82px);
   width: 100%;
   position: absolute;
   background-color: #00587A;
   z-index: -2;
+  max-height: calc(600px + 82px);
 }
 
 @media (max-width: 1200px) {
@@ -1461,6 +1461,12 @@ object {
 /* line 19, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_slider.scss */
 #n2-ss-2-arrow-next {
   order: 2;
+}
+
+/* line 22, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_slider.scss */
+.n2-ss-slider-2 {
+  width: 100%;
+  max-height: calc(100vh - 82px) !important;
 }
 
 /* line 1, ../../../../MAMP/htdocs/deveron/wp-content/themes/blanktheme/sass/media/_map.scss */
